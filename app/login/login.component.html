@@ -1,0 +1,14 @@
+<div id="background">
+  <div class="login-page" id = "loginsignupbody">
+    <div class="form" ng-show= "maindiv">
+      <form #loginForm = "ngForm" class="login-form" ng-show="loginform" (ngSubmit) = "login(loginForm.value)" >
+        <h3>Trivago</h3>
+          <input type="text" class="glyphicon glyphicon-envelope" name="email" placeholder="email" ngModel required="required">
+          <input type="password" class="glyphicon glyphicon-lock" name="pwd" placeholder="password"  ngModel required >
+          <button>login</button>
+          <p class="message">Not registered? <a [routerLink] = "['/signup']">Create an account</a></p>
+	        <p class="message">{{Status}}</p>
+        </form>
+    </div>
+  </div>
+</div>

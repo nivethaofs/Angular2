@@ -1,0 +1,11 @@
+
+<div>
+  <p>Reviews....</p>
+  <table class="table table-hover" style="font-size:21px">
+    <tr *ngFor="let review of hotelReviews">
+      <td class="glyphicon glyphicon-user"> {{review.user.name}}</td>
+      <td class="glyphicon glyphicon-star"> {{review.rating}}</td>
+      <td class="glyphicon glyphicon-comment"> {{review.feedback}}</td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,206 @@
+#list{
+    font-style: italic;
+    text-align :center;
+  }
+  #getstarted {
+    padding-top: 300px;
+  
+  }
+  #strike{
+    text-decoration: line-through;
+  }
+  #img{
+    align-items: center;
+  }
+  
+  #image {
+    padding-top: 3%;
+  }
+  
+  #reviews{
+    display:inline-block;
+    float:left;
+  
+  }
+  #review_username{
+    width:150px;
+    height:200px;
+  
+  }
+  #rating {
+    width:150px;
+    height:100px;
+  
+  }
+  #feedback {
+    width: 150px;
+    height: 100px;
+  
+  }
+  #hotelname {
+    font-style: italic;
+    font-size: 20px;
+    color: white;
+    text-align :center;
+  }
+  #city_name,#view,#booknow,#review{
+    font-style: italic;
+     text-align: center;
+     background: black;
+     color: #FFFFFF;
+  }
+  #city_name:hover,#view:hover,#booknow:hover,#img:hover{
+    background: #999999;
+  }
+  #accountcheckin {
+    padding-top: 6px;
+  }
+  
+  #loginform{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      border:1px solid red;
+  }
+  .login-page {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+  }
+  .welcomeUser{
+    position: relative;
+    z-index: 1;
+    border-radius: 20%;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    background: #76b852; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, #fff, #fff);
+    background: -moz-linear-gradient(right, #fff, #fff);
+    background: -o-linear-gradient(right, #fff, #fff);
+    background: linear-gradient(to left, #fff, #fff);
+    box-shadow: 0 0 20px 0 #8BC34A, 0 5px 5px 0 #8BC34A;
+  }
+  .form {
+    position: relative;
+    z-index: 1;
+    border-radius: 20%;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  .form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  .form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    z-index: 1;
+    background: black;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  .form button:hover,.form button:active,.form button:focus {
+    background: #999999;
+  }
+  .form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+  }
+  .form .message:hover a {
+    color: black;
+    text-decoration: none;
+    background: #999999;
+  }
+  .form .register-form {
+    display: none;
+  }
+  .login {
+    position: relative;
+    z-index: 1;
+    border-radius: 20%;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  .login input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  .login button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: black;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  .login button:hover,.form button:active,.form button:focus {
+    background: #999999;
+  }
+  .login .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+  }
+  .login .message a {
+    color: black;
+    text-decoration: none;
+  }
+  .login .register-form {
+    display: none;
+  }
+   #loginsignupbody {
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* background-image: url('repo/bg.jpg'); */
+  } 
+  #background{
+    height: 100vh;
+  background-image: url('./image/bg.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #222222;
+  
+  }
+  

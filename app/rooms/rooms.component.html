@@ -1,0 +1,13 @@
+<div>
+  <table class="table table-hover">
+    <tr *ngFor ="let room of rooms">
+      <td class="glyphicon glyphicon-bed"> {{room.type}}</td>
+      <td><b>{{room.discount}} Offer</b></td>
+      <td id="strike"><b>&#x20B9;{{room.originalprice}}</b></td>
+      <td><b>&#x20B9;{{room.price}}</b></td>
+      <td class="fa fa-hotel" style="font-size:20px">{{room.hotel.name}}</td>
+      <td class="glyphicon glyphicon-map-marker">{{room.hotel.city.name}}</td>
+      <td><button type="button" id="booknow" (click) = "bookroom(room.id)" >Book Now</button></td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,18 @@
+
+<div>
+  <br/>
+  <table class="table table-hover">
+    <tr *ngFor="let history of historyDetails">
+      <td class="glyphicon glyphicon-calendar">{{history.checkin}} </td>
+      <td class="glyphicon glyphicon-calendar">{{history.checkout}}</td>
+      <td class="fa fa-hotel" style="font-size:21px">{{history.room.hotel.name}}</td>
+      <td class="glyphicon glyphicon-map-marker">{{history.room.hotel.city.name}}</td>
+      <td>&#x20B9;{{history.room.price}}</td>
+      <td class="glyphicon glyphicon-phone-alt">{{history.room.hotel.contactno}}</td>
+      <td class="glyphicon glyphicon-ok">{{history.status}}</td>
+      <td><button type="button" class="btn btn-info" (click) = "comments(history.room.hotel.id)">Comment</button>
+      <td><button type="button" class="btn btn-danger" (click) = "cancelBooking(history.id)">Cancel Booking</button></td>
+      <br>
+    </tr>
+  </table>
+</div>

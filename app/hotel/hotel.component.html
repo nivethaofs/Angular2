@@ -1,0 +1,24 @@
+
+<div class = "row">
+  <div class="col-xs-3" id = "image">
+    <table class = "table table-hover" id = "img_table">
+      <tr *ngFor = "let image of image">
+         <td><img id ="img" src = "../../assets/repo/{{image.img_name}}" height="10%" width = "100%" (click) = "selectImage(image.id)"></td>
+      </tr>
+    </table>
+  </div>
+  <div class="col-xs-7">
+    <table class = "table table-hover">
+      <tr *ngFor="let hotel of hotel" >
+        <td class="fa fa-hotel" style="font-size:20px">{{hotel.name}} </td>
+        <td >{{hotel.address}}</td>
+        <td class="glyphicon glyphicon-phone-alt">{{hotel.contactno}}</td>
+        <td class="glyphicon glyphicon-map-marker">{{hotel.city.name}}</td>
+        <td><button type = "button" id = "view" (click)="selectedHotel(hotel.id)">View Deal</button></td>
+       <td><button type = "button" id = "review" (click)="hotelReviews(hotel.id)">Reviews</button></td>
+        <br>
+      </tr>
+    </table>
+  </div>
+</div>
+<room-component *ngIf = 'selectedHotelid' [selectedHotelid] = 'selectedHotelid' ></room-component>

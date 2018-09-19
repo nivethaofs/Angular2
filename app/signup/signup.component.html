@@ -1,0 +1,13 @@
+<div id="background">
+  <div class="login" id="loginsignupbody">
+    <h3>Trivago</h3>
+    <form #signup = "ngForm" (ngSubmit) = "onSubmit(signup.value)">
+      <input type="text" placeholder="name" name = "name" ngModel>
+      <input type="E-mail" placeholder="E-mail" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"ngModel>
+      <input type="password" placeholder="password" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" class="glyphicon glyphicon-lock" ngModel
+        required>
+      <button value="Submit">Submit</button>
+    </form>
+  </div>
+</div>
+
